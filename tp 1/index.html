@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancha de Fútbol</title>
+</head>
+<body>
+    <section class="cancha">
+        <section class="arco">
+            <article class="arquero"></article>
+        </section>
+        <section class="defensa">
+            <article class="jugador"></article>
+            <article class="jugador"></article>
+            <article class="jugador"></article>
+            <article class="jugador"></article> 
+        </section>
+        
+
+        <section class="mediocampo">
+            <article class="jugador"></article>
+            <article class="jugador"></article>
+            <article class="jugador"></article> 
+        </section>
+
+        <section class="ataque">
+            <article class="jugador"></article>
+            <article class="jugador"></article>
+            <article class="jugador"></article>
+            <article class="jugador"></article> 
+        </section>
+    </section>
+    <style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+    html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cancha {
+    height: 80%;
+    aspect-ratio: 1/1;
+    background-color: darkgreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-width: 4px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 1%;
+}
+.arco{
+    height: 15%;
+    background-color: chartreuse;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.defensa{
+    height: 15%;
+    background-color: chartreuse;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.mediocampo{
+    height: 15%;
+    background-color: chartreuse;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.ataque{
+    height: 15%;
+    background-color: chartreuse;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.jugador{
+    height: 75%;
+    aspect-ratio: 1/1;
+    background-color: aqua;
+    border-color: white;
+    border-style: solid;
+    border-radius: 1%;
+}
+.arquero{
+    height: 75%;
+    aspect-ratio: 1/1;
+    background-color: aqua;
+    border-color: white;
+    border-style: solid;
+    border-radius: 1%;
+}
+
+
+
+    </style>
+</body>
+</html>
