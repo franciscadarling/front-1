@@ -8,27 +8,53 @@
 <body>
     <section class="cancha">
         <section class="arco">
-            <article class="arquero"></article>
+            <article class="jugador">
+                <p class="nombre">1</p>
+                <p class="nombre">DIBU</p>
+            </article>
         </section>
         <section class="defensa">
-            <article class="jugador"></article>
-            <article class="jugador"></article>
-            <article class="jugador"></article>
-            <article class="jugador"></article> 
+            <article class="jugador">
+                <p class="nombre">1</p>
+                <p class="nombre">GOROSITO</p>
+            </article>
+            <article class="jugador">
+                <p class="nombre">2</p>
+                <p class="nombre">ROMERO</p>
+            </article>
+            <article class="jugador">
+                <p class="nombre">3</p>
+                <p class="nombre">MARTÍNEZ</p>
+            </article>
+            <article class="jugador">
+                <p class="nombre">4</p>
+                <p class="nombre">TAGLIAFICO</p>
+            </article> 
         </section>
         
 
         <section class="mediocampo">
-            <article class="jugador"></article>
-            <article class="jugador"></article>
-            <article class="jugador"></article> 
+            <article class="jugador">
+                <p class="nombre">FERNANDEZ</p>
+            </article>
+            <article class="jugador">
+                <p class="nombre">PAREDES</p>
+            </article>
+            <article class="jugador">
+                <p class="nombre">COLO</p>
+            </article> 
         </section>
 
         <section class="ataque">
-            <article class="jugador"></article>
-            <article class="jugador"></article>
-            <article class="jugador"></article>
-            <article class="jugador"></article> 
+            <article class="jugador">
+                <p class="nombre">DI MARIA</p>  
+            </article>
+            <article class="jugador">
+                <p class="nombre">ALVAREZ</p>
+            </article>
+            <article class="jugador">
+                <p class="nombre">MESSI</p>
+            </article>
         </section>
     </section>
     <style>
@@ -51,7 +77,7 @@ body {
 }
 
 .cancha {
-    height: 80%;
+    height: 90%;
     aspect-ratio: 1/1;
     background-color: darkgreen;
     display: flex;
@@ -97,18 +123,22 @@ body {
 .jugador{
     height: 75%;
     aspect-ratio: 1/1;
-    background-color: aqua;
+    background-color: rgb(86, 182, 182);
     border-color: white;
     border-style: solid;
-    border-radius: 1%;
+    border-radius: 0.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-.arquero{
-    height: 75%;
-    aspect-ratio: 1/1;
-    background-color: aqua;
-    border-color: white;
-    border-style: solid;
-    border-radius: 1%;
+.nombre {
+    color: white;
+    font-weight: bold;
+    font-size: 0.5rem;       
+    text-align: center;
+    word-break: break-all;    
+    font-family: sans-serif;
 }
 
 
