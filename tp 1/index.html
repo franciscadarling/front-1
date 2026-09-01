@@ -6,57 +6,74 @@
     <title>Cancha de Fútbol</title>
 </head>
 <body>
-    <section class="cancha">
+    <main class="cancha">
         <section class="arco">
-            <article class="jugador">
-                <p class="nombre">1</p>
+            <article class="jugador arquero">
+                <p class="numero">01</p>
                 <p class="nombre">DIBU</p>
+                <p class="posicion">arquero</p>
             </article>
         </section>
         <section class="defensa">
             <article class="jugador">
-                <p class="nombre">1</p>
+                <p class="numero">26</p>
                 <p class="nombre">GOROSITO</p>
+                <p class="posicion">defensa</p>
             </article>
             <article class="jugador">
-                <p class="nombre">2</p>
+                <p class="numero">26</p>
                 <p class="nombre">ROMERO</p>
+                <p class="posicion">defensa</p>
             </article>
             <article class="jugador">
-                <p class="nombre">3</p>
+                <p class="numero">36</p>
                 <p class="nombre">MARTÍNEZ</p>
+                <p class="posicion">defensa</p>
             </article>
             <article class="jugador">
-                <p class="nombre">4</p>
+                <p class="numero">46</p>
                 <p class="nombre">TAGLIAFICO</p>
+                <p class="posicion">defensa</p>
             </article> 
         </section>
         
 
         <section class="mediocampo">
             <article class="jugador">
+                <p class="numero">46</p>
                 <p class="nombre">FERNANDEZ</p>
+                <p class="posicion">medio</p>
             </article>
             <article class="jugador">
+                <p class="numero">10</p>
                 <p class="nombre">PAREDES</p>
+                <p class="posicion">medio</p>
             </article>
             <article class="jugador">
+                <p class="numero"> <span class="balon">⚽</span>46</p>
                 <p class="nombre">COLO</p>
+                <p class="posicion">medio</p>
             </article> 
         </section>
 
         <section class="ataque">
             <article class="jugador">
-                <p class="nombre">DI MARIA</p>  
+                <p class="numero">46</p>
+                <p class="nombre">DI MARIA</p>
+                <p class="posicion">ataque</p>  
             </article>
             <article class="jugador">
+                <p class="numero">46</p>
                 <p class="nombre">ALVAREZ</p>
+                <p class="posicion">ataque</p>
             </article>
             <article class="jugador">
+                <p class="numero">46</p>
                 <p class="nombre">MESSI</p>
+                <p class="posicion">ataque</p>
             </article>
         </section>
-    </section>
+    </main>
     <style>
 * {
     box-sizing: border-box;
@@ -79,7 +96,7 @@ body {
 .cancha {
     height: 90%;
     aspect-ratio: 1/1;
-    background-color: darkgreen;
+    background-color: rgb(14, 117, 14);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -87,61 +104,91 @@ body {
     border-color: white;
     border-style: solid;
     border-radius: 1%;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
 }
 .arco{
-    height: 15%;
-    background-color: chartreuse;
+    height: 20%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 }
 .defensa{
-    height: 15%;
-    background-color: chartreuse;
+    height: 20%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 }
 .mediocampo{
-    height: 15%;
-    background-color: chartreuse;
+    height: 20%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 }
 .ataque{
-    height: 15%;
-    background-color: chartreuse;
+    height: 20%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 }
+
 .jugador{
-    height: 75%;
-    aspect-ratio: 1/1;
+    height: 95%;
     background-color: rgb(86, 182, 182);
-    border-color: white;
+    border-color: ghostwhite;
     border-style: solid;
-    border-radius: 0.5%;
+    border-radius: 10%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
+    padding: 0.5rem;
+    color: rgb(6, 5, 78);
+    position: relative;
+}
+.arquero{
+    background-color: black;
+    border-color: darkgoldenrod;
+    color:darkgoldenrod;
 }
 .nombre {
-    color: white;
     font-weight: bold;
-    font-size: 0.5rem;       
+    font-size: 0.7rem;       
     text-align: center;
     word-break: break-all;    
     font-family: sans-serif;
 }
+.numero{
+    font-size: 1rem; 
+    border-radius: 50%;
+    font-family: sans-serif;
+    color: aliceblue;
+    padding: .25rem;
+    background-color: rgb(6, 5, 78);
+    font-weight: bold;
+    position: relative;
 
+}
 
+.posicion{
+    font-size: .5rem; 
+    border-radius: 10%;
+    font-family: sans-serif;
+    color: aliceblue;
+    padding: .25rem;
+    background-color: rgb(6, 5, 78);
+    font-style: italic; 
+}
+.balon{
+    scale: 75%;
+    position: absolute;
+    top: 40%;
+    right: 50%;
+}
 
     </style>
 </body>
