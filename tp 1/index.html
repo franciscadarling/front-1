@@ -1,195 +1,98 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cancha de Fútbol</title>
+    <title>Document</title>
 </head>
 <body>
-    <main class="cancha">
-        <section class="arco">
-            <article class="jugador arquero">
-                <p class="numero">01</p>
-                <p class="nombre">DIBU</p>
-                <p class="posicion">arquero</p>
-            </article>
+    <main class="pantalla">
+        <section class="seccion-1"></section>
+        <section class="seccion-2">
+            <article class="cuadradito rojo"></article>
+            <div class="texto"><p>texto texto texto texto</p></div>
         </section>
-        <section class="defensa">
-            <article class="jugador">
-                <p class="numero">26</p>
-                <p class="nombre">GOROSITO</p>
-                <p class="posicion">defensa</p>
-            </article>
-            <article class="jugador">
-                <p class="numero">26</p>
-                <p class="nombre">ROMERO</p>
-                <p class="posicion">defensa</p>
-            </article>
-            <article class="jugador">
-                <p class="numero">36</p>
-                <p class="nombre">MARTÍNEZ</p>
-                <p class="posicion">defensa</p>
-            </article>
-            <article class="jugador">
-                <p class="numero">46</p>
-                <p class="nombre">TAGLIAFICO</p>
-                <p class="posicion">defensa</p>
-            </article> 
-        </section>
-        
-
-        <section class="mediocampo">
-            <article class="jugador">
-                <p class="numero">46</p>
-                <p class="nombre">FERNANDEZ</p>
-                <p class="posicion">medio</p>
-            </article>
-            <article class="jugador">
-                <p class="numero">10</p>
-                <p class="nombre">PAREDES</p>
-                <p class="posicion">medio</p>
-            </article>
-            <article class="jugador">
-                <p class="numero"> <span class="balon">⚽</span>46</p>
-                <p class="nombre">COLO</p>
-                <p class="posicion">medio</p>
-            </article> 
-        </section>
-
-        <section class="ataque">
-            <article class="jugador">
-                <p class="numero">46</p>
-                <p class="nombre">DI MARIA</p>
-                <p class="posicion">ataque</p>  
-            </article>
-            <article class="jugador">
-                <p class="numero">46</p>
-                <p class="nombre">ALVAREZ</p>
-                <p class="posicion">ataque</p>
-            </article>
-            <article class="jugador">
-                <p class="numero">46</p>
-                <p class="nombre">MESSI</p>
-                <p class="posicion">ataque</p>
-            </article>
+        <section class="seccion-3">
+            <div class="coso">
+                <article class="cuadradito rojo"></article>
+                <div class="texto"><p>texto texto texto texto</p></div>
+            </div>
+            <div class="coso">
+                <article class="cuadradito azul"></article>
+                <div class="texto"><p>texto texto texto texto</p></div>
+            </div>
+            <div class="coso">
+                    <article class="cuadradito amarillo"></article>
+                    <div class="texto"><p>texto texto texto texto</p></div>
+            </div>
+            
         </section>
     </main>
-    <style>
-* {
+    <style> 
+        * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
+    }
 
     html, body {
     height: 100%;
     margin: 0;
-}
-
-body {
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.cancha {
-    height: 90%;
-    aspect-ratio: 1/1;
-    background-color: rgb(14, 117, 14);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border-width: 4px;
-    border-color: white;
-    border-style: solid;
-    border-radius: 1%;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
-}
-.arco{
-    height: 20%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.defensa{
-    height: 20%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.mediocampo{
-    height: 20%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.ataque{
-    height: 20%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.jugador{
-    height: 95%;
-    background-color: rgb(86, 182, 182);
-    border-color: ghostwhite;
-    border-style: solid;
-    border-radius: 10%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-    padding: 0.5rem;
-    color: rgb(6, 5, 78);
-    position: relative;
-}
-.arquero{
-    background-color: black;
-    border-color: darkgoldenrod;
-    color:darkgoldenrod;
-}
-.nombre {
-    font-weight: bold;
-    font-size: 0.7rem;       
-    text-align: center;
-    word-break: break-all;    
-    font-family: sans-serif;
-}
-.numero{
-    font-size: 1rem; 
-    border-radius: 50%;
-    font-family: sans-serif;
-    color: aliceblue;
-    padding: .25rem;
-    background-color: rgb(6, 5, 78);
-    font-weight: bold;
-    position: relative;
-
-}
-
-.posicion{
-    font-size: .5rem; 
-    border-radius: 10%;
-    font-family: sans-serif;
-    color: aliceblue;
-    padding: .25rem;
-    background-color: rgb(6, 5, 78);
-    font-style: italic; 
-}
-.balon{
-    scale: 75%;
-    position: absolute;
-    top: 40%;
-    right: 50%;
-}
-
+    }
+    .main{
+        height: 100dvh;
+        width: 100dvw;
+    }
+        .seccion-1{
+            height: 25dvh;
+            width: 100dvw;
+        }
+        .seccion-2{
+            height: 35dvh;
+            width: 100dvw;
+            background-color: aquamarine;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        .seccion-3{
+            height: 40dvh;
+            width: 100dvw;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .coso{
+            width: 10dvw;
+            height: 30dvh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .cuadradito{
+        width: 10dvw;
+        aspect-ratio: 1/1;
+    }
+    .texto{
+        display: flex;
+        flex:1;
+        overflow-wrap: break-word;
+        align-items: center;
+        justify-content: center;
+    }
+    .azul{
+        background-color: blue;
+    }
+    .rojo{
+        background-color: darkred;
+    }
+    .amarillo{
+        background-color: goldenrod;
+    }
     </style>
 </body>
 </html>
