@@ -7,19 +7,43 @@
 </head>
 <body>
     <main class="pantalla">
-        <section class="seccion-1"></section>
+        <section class="seccion-1">
+            <div class="xdpapa">
+            <div class="barra-busqueda">
+                <input class="input">
+            </div>
+            <article class="cuadrado-negro"></article>
+        </div>
+            <div class="xd">
+                <article class="texto">texto texto texto </article>
+                <article class="texto">texto texto texto </article>
+                <article class="texto">texto texto texto </article>
+                <article class="texto">texto texto texto </article>
+            </div>
+        </section>
         <section class="seccion-2">
+            <div class="dumb">
             <article class="cuadradito rojo"></article>
-            <div class="texto"><p>texto texto texto texto</p></div>
+        </div>
+            <div class="texto">
+                <h1>TITULO</h1>
+                <p>texto texto texto texto</p>
+                <p>texto texto texto texto</p>
+                <p>texto texto texto texto</p>
+            </div>
         </section>
         <section class="seccion-3">
             <div class="coso">
-                <article class="cuadradito rojo"></article>
+                <article class="cuadradito rojo">
+                    <h1 class="titulo">TITULO</h1>
+                    <p class="textok">texto texto texto texto</p>
+                    </article>
                 <div class="texto"><p>texto texto texto texto</p></div>
             </div>
             <div class="coso">
                 <article class="cuadradito azul"></article>
-                <div class="texto"><p>texto texto texto texto</p></div>
+                <div class="texto">
+                    <p>texto texto texto texto</p></div>
             </div>
             <div class="coso">
                     <article class="cuadradito amarillo"></article>
@@ -46,6 +70,10 @@
         .seccion-1{
             height: 25dvh;
             width: 100dvw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
         }
         .seccion-2{
             height: 35dvh;
@@ -64,6 +92,45 @@
             align-items: center;
             justify-content: space-evenly;
         }
+        .barra-busqueda{
+            height:7dvh;
+            width: 32dvw;
+            background-color: #ff9978;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+        }
+        .xdpapa{
+            display: flex;
+            flex-direction: row;
+            margin-top: 8dvh;
+        }
+        .xd{
+            flex: 1;
+            width: 100dvw;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .input{
+           height: 4dvh;
+           width:30dvw;
+        }
+        .dumb{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50dvw;
+        }
+        .cuadrado-negro{
+            display: flex;
+            height: 7dvh;
+            width: 6dvw;
+            background-color: black;
+        }
+
         .coso{
             width: 10dvw;
             height: 30dvh;
@@ -76,6 +143,10 @@
         .cuadradito{
         width: 10dvw;
         aspect-ratio: 1/1;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
     }
     .texto{
         display: flex;
@@ -83,6 +154,18 @@
         overflow-wrap: break-word;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
+    }
+    .textok{
+        display: flex;
+        flex:1;
+        overflow-wrap: break-word;
+        flex-direction: column;
+        margin: 2dvh;
+    }
+    .titulo{
+        margin-top: 2dvh;
+        margin-bottom: 0;
     }
     .azul{
         background-color: 
